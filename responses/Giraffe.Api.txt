@@ -15,7 +15,7 @@ curl -s -S -v -X GET http://localhost:5000/hello
 < HTTP/1.1 200 OK
 < Content-Length: 19
 < Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:47 GMT
+< Date: Tue, 20 Jan 2026 20:06:39 GMT
 < Server: Kestrel
 < 
 { [19 bytes data]
@@ -41,16 +41,12 @@ curl -s -S -v -X GET http://localhost:5000/notfound
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:48 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:40 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -69,16 +65,12 @@ curl -s -S -v -X POST http://localhost:5000/hello
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:48 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:40 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -97,16 +89,12 @@ curl -s -S -v -X POST http://localhost:5000/notfound
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:49 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:41 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -127,7 +115,7 @@ curl -s -S -v -X Get http://localhost:5000/hello
 < HTTP/1.1 200 OK
 < Content-Length: 19
 < Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:49 GMT
+< Date: Tue, 20 Jan 2026 20:06:41 GMT
 < Server: Kestrel
 < 
 { [19 bytes data]
@@ -153,16 +141,12 @@ curl -s -S -v -X Get http://localhost:5000/notfound
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:50 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:42 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -181,16 +165,12 @@ curl -s -S -v -X Post http://localhost:5000/hello
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:50 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:43 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -209,16 +189,12 @@ curl -s -S -v -X Post http://localhost:5000/notfound
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:51 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:43 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -239,7 +215,7 @@ curl -s -S -v -X get http://localhost:5000/hello
 < HTTP/1.1 200 OK
 < Content-Length: 19
 < Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:51 GMT
+< Date: Tue, 20 Jan 2026 20:06:44 GMT
 < Server: Kestrel
 < 
 { [19 bytes data]
@@ -265,16 +241,12 @@ curl -s -S -v -X get http://localhost:5000/notfound
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:52 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:44 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -293,16 +265,12 @@ curl -s -S -v -X post http://localhost:5000/hello
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:52 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:45 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -321,16 +289,12 @@ curl -s -S -v -X post http://localhost:5000/notfound
 > Accept: */*
 > 
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:53 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:45 GMT
 < Server: Kestrel
 < 
-{ [9 bytes data]
 * Connection #0 to host localhost left intact
 
-Response Body:
-Not Found
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
