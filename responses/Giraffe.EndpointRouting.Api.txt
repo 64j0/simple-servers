@@ -1,0 +1,327 @@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X GET http://localhost:5000/hello
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> GET /hello HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Length: 41
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:40 GMT
+< Server: Kestrel
+< 
+{ [41 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Hello from Giraffe with Endpoint Routing!
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X GET http://localhost:5000/notfound
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> GET /notfound HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:41 GMT
+< Server: Kestrel
+< 
+{ [9 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Not Found
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X POST http://localhost:5000/hello
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> POST /hello HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 405 Method Not Allowed
+< Content-Length: 0
+< Date: Mon, 19 Jan 2026 23:36:41 GMT
+< Server: Kestrel
+< Allow: GET
+< 
+* Connection #0 to host localhost left intact
+
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X POST http://localhost:5000/notfound
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> POST /notfound HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:42 GMT
+< Server: Kestrel
+< 
+{ [9 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Not Found
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X Get http://localhost:5000/hello
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> Get /hello HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Length: 41
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:42 GMT
+< Server: Kestrel
+< 
+{ [41 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Hello from Giraffe with Endpoint Routing!
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X Get http://localhost:5000/notfound
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> Get /notfound HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:43 GMT
+< Server: Kestrel
+< 
+{ [9 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Not Found
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X Post http://localhost:5000/hello
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> Post /hello HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 405 Method Not Allowed
+< Content-Length: 0
+< Date: Mon, 19 Jan 2026 23:36:43 GMT
+< Server: Kestrel
+< Allow: GET
+< 
+* Connection #0 to host localhost left intact
+
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X Post http://localhost:5000/notfound
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> Post /notfound HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:44 GMT
+< Server: Kestrel
+< 
+{ [9 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Not Found
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X get http://localhost:5000/hello
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> get /hello HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Length: 41
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:44 GMT
+< Server: Kestrel
+< 
+{ [41 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Hello from Giraffe with Endpoint Routing!
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X get http://localhost:5000/notfound
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> get /notfound HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:45 GMT
+< Server: Kestrel
+< 
+{ [9 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Not Found
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X post http://localhost:5000/hello
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> post /hello HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 405 Method Not Allowed
+< Content-Length: 0
+< Date: Mon, 19 Jan 2026 23:36:45 GMT
+< Server: Kestrel
+< Allow: GET
+< 
+* Connection #0 to host localhost left intact
+
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+curl -s -S -v -X post http://localhost:5000/notfound
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:5000...
+* Connected to localhost (::1) port 5000
+> post /notfound HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/8.5.0
+> Accept: */*
+> 
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/plain; charset=utf-8
+< Date: Mon, 19 Jan 2026 23:36:46 GMT
+< Server: Kestrel
+< 
+{ [9 bytes data]
+* Connection #0 to host localhost left intact
+
+Response Body:
+Not Found
+
+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
+

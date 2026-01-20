@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <ExpressRoot>.\</ExpressRoot>
+    <!-- So we can `dotnet run ...` this project -->
+    <RunCommand>npm</RunCommand>
+    <RunArguments>start</RunArguments>
+    <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+  </PropertyGroup>
+
+  <Target Name="NpmInstall" BeforeTargets="Build" Inputs="package.json" Outputs="node_modules/.install-stamp">
+    <Message Importance="high" Text="Running npm install..." />
+    <Exec Command="npm install" WorkingDirectory="$(ExpressRoot)" />
+    <Touch Files="node_modules/.install-stamp" AlwaysCreate="true" />
+  </Target>
+
+  <Target Name="NpmClean" BeforeTargets="Clean">
+    <RemoveDir Directories="$(ExpressRoot)node_modules" />
+    <RemoveDir Directories="$(ExpressRoot)dist" />
+    <Delete Files="node_modules/.install-stamp" />
+  </Target>
+</Project>

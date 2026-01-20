@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <ExpressRoot>.\</ExpressRoot>
+    <!-- So we can `dotnet run ...` this project -->
+    <RunCommand>go</RunCommand>
+    <RunArguments>run main.go</RunArguments>
+    <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+  </PropertyGroup>
+
+  <Target Name="GoBuild" BeforeTargets="Build">
+    <Exec Command="go build -o bin/server main.go" />
+    </Target>
+</Project>
