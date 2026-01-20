@@ -13,16 +13,16 @@ curl -s -S -v -X GET http://localhost:5000/hello
 > Accept: */*
 > 
 < HTTP/1.1 200 OK
-< Content-Length: 41
+< Content-Length: 19
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:23 GMT
+< Date: Tue, 20 Jan 2026 01:27:47 GMT
 < Server: Kestrel
 < 
-{ [41 bytes data]
+{ [19 bytes data]
 * Connection #0 to host localhost left intact
 
 Response Body:
-Hello from Giraffe with Endpoint Routing!
+Hello from Giraffe!
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -43,7 +43,7 @@ curl -s -S -v -X GET http://localhost:5000/notfound
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:24 GMT
+< Date: Tue, 20 Jan 2026 01:27:48 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -71,7 +71,7 @@ curl -s -S -v -X POST http://localhost:5000/hello
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:24 GMT
+< Date: Tue, 20 Jan 2026 01:27:48 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -99,7 +99,7 @@ curl -s -S -v -X POST http://localhost:5000/notfound
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:25 GMT
+< Date: Tue, 20 Jan 2026 01:27:49 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -125,16 +125,16 @@ curl -s -S -v -X Get http://localhost:5000/hello
 > Accept: */*
 > 
 < HTTP/1.1 200 OK
-< Content-Length: 41
+< Content-Length: 19
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:25 GMT
+< Date: Tue, 20 Jan 2026 01:27:49 GMT
 < Server: Kestrel
 < 
-{ [41 bytes data]
+{ [19 bytes data]
 * Connection #0 to host localhost left intact
 
 Response Body:
-Hello from Giraffe with Endpoint Routing!
+Hello from Giraffe!
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -155,7 +155,7 @@ curl -s -S -v -X Get http://localhost:5000/notfound
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:26 GMT
+< Date: Tue, 20 Jan 2026 01:27:50 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -183,7 +183,7 @@ curl -s -S -v -X Post http://localhost:5000/hello
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:26 GMT
+< Date: Tue, 20 Jan 2026 01:27:50 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -211,7 +211,7 @@ curl -s -S -v -X Post http://localhost:5000/notfound
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:27 GMT
+< Date: Tue, 20 Jan 2026 01:27:51 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -237,16 +237,16 @@ curl -s -S -v -X get http://localhost:5000/hello
 > Accept: */*
 > 
 < HTTP/1.1 200 OK
-< Content-Length: 41
+< Content-Length: 19
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:27 GMT
+< Date: Tue, 20 Jan 2026 01:27:51 GMT
 < Server: Kestrel
 < 
-{ [41 bytes data]
+{ [19 bytes data]
 * Connection #0 to host localhost left intact
 
 Response Body:
-Hello from Giraffe with Endpoint Routing!
+Hello from Giraffe!
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -267,7 +267,7 @@ curl -s -S -v -X get http://localhost:5000/notfound
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:28 GMT
+< Date: Tue, 20 Jan 2026 01:27:52 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -295,7 +295,7 @@ curl -s -S -v -X post http://localhost:5000/hello
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:28 GMT
+< Date: Tue, 20 Jan 2026 01:27:52 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]
@@ -323,7 +323,7 @@ curl -s -S -v -X post http://localhost:5000/notfound
 < HTTP/1.1 404 Not Found
 < Content-Length: 9
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:36:29 GMT
+< Date: Tue, 20 Jan 2026 01:27:53 GMT
 < Server: Kestrel
 < 
 { [9 bytes data]

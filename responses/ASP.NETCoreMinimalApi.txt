@@ -14,15 +14,15 @@ curl -s -S -v -X GET http://localhost:5000/hello
 > 
 < HTTP/1.1 200 OK
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:35:51 GMT
+< Date: Tue, 20 Jan 2026 01:27:15 GMT
 < Server: Kestrel
 < Transfer-Encoding: chunked
 < 
-{ [12 bytes data]
+{ [36 bytes data]
 * Connection #0 to host localhost left intact
 
 Response Body:
-Hello World!
+Hello from ASP.NET Core Minimal API!
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -42,7 +42,7 @@ curl -s -S -v -X GET http://localhost:5000/notfound
 > 
 < HTTP/1.1 404 Not Found
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:52 GMT
+< Date: Tue, 20 Jan 2026 01:27:16 GMT
 < Server: Kestrel
 < 
 * Connection #0 to host localhost left intact
@@ -66,7 +66,7 @@ curl -s -S -v -X POST http://localhost:5000/hello
 > 
 < HTTP/1.1 405 Method Not Allowed
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:53 GMT
+< Date: Tue, 20 Jan 2026 01:27:16 GMT
 < Server: Kestrel
 < Allow: GET
 < 
@@ -91,7 +91,7 @@ curl -s -S -v -X POST http://localhost:5000/notfound
 > 
 < HTTP/1.1 404 Not Found
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:53 GMT
+< Date: Tue, 20 Jan 2026 01:27:17 GMT
 < Server: Kestrel
 < 
 * Connection #0 to host localhost left intact
@@ -115,15 +115,15 @@ curl -s -S -v -X Get http://localhost:5000/hello
 > 
 < HTTP/1.1 200 OK
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:35:54 GMT
+< Date: Tue, 20 Jan 2026 01:27:18 GMT
 < Server: Kestrel
 < Transfer-Encoding: chunked
 < 
-{ [12 bytes data]
+{ [36 bytes data]
 * Connection #0 to host localhost left intact
 
 Response Body:
-Hello World!
+Hello from ASP.NET Core Minimal API!
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -143,7 +143,7 @@ curl -s -S -v -X Get http://localhost:5000/notfound
 > 
 < HTTP/1.1 404 Not Found
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:54 GMT
+< Date: Tue, 20 Jan 2026 01:27:18 GMT
 < Server: Kestrel
 < 
 * Connection #0 to host localhost left intact
@@ -167,7 +167,7 @@ curl -s -S -v -X Post http://localhost:5000/hello
 > 
 < HTTP/1.1 405 Method Not Allowed
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:55 GMT
+< Date: Tue, 20 Jan 2026 01:27:19 GMT
 < Server: Kestrel
 < Allow: GET
 < 
@@ -192,7 +192,7 @@ curl -s -S -v -X Post http://localhost:5000/notfound
 > 
 < HTTP/1.1 404 Not Found
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:55 GMT
+< Date: Tue, 20 Jan 2026 01:27:19 GMT
 < Server: Kestrel
 < 
 * Connection #0 to host localhost left intact
@@ -216,15 +216,15 @@ curl -s -S -v -X get http://localhost:5000/hello
 > 
 < HTTP/1.1 200 OK
 < Content-Type: text/plain; charset=utf-8
-< Date: Mon, 19 Jan 2026 23:35:56 GMT
+< Date: Tue, 20 Jan 2026 01:27:20 GMT
 < Server: Kestrel
 < Transfer-Encoding: chunked
 < 
-{ [12 bytes data]
+{ [36 bytes data]
 * Connection #0 to host localhost left intact
 
 Response Body:
-Hello World!
+Hello from ASP.NET Core Minimal API!
 
 ===+===+===+===+===+===+===+===+===+===+===+===+===+===+===+===
 
@@ -244,7 +244,7 @@ curl -s -S -v -X get http://localhost:5000/notfound
 > 
 < HTTP/1.1 404 Not Found
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:56 GMT
+< Date: Tue, 20 Jan 2026 01:27:20 GMT
 < Server: Kestrel
 < 
 * Connection #0 to host localhost left intact
@@ -268,7 +268,7 @@ curl -s -S -v -X post http://localhost:5000/hello
 > 
 < HTTP/1.1 405 Method Not Allowed
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:57 GMT
+< Date: Tue, 20 Jan 2026 01:27:21 GMT
 < Server: Kestrel
 < Allow: GET
 < 
@@ -293,7 +293,7 @@ curl -s -S -v -X post http://localhost:5000/notfound
 > 
 < HTTP/1.1 404 Not Found
 < Content-Length: 0
-< Date: Mon, 19 Jan 2026 23:35:57 GMT
+< Date: Tue, 20 Jan 2026 01:27:21 GMT
 < Server: Kestrel
 < 
 * Connection #0 to host localhost left intact

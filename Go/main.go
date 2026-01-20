@@ -13,7 +13,7 @@ func main() {
 	// 2. Define the GET /hello endpoint
 	r.GET("/hello", func(c *gin.Context) {
 		// Returns a plain string with a 200 OK status
-		c.String(200, "Hellofrom Gin (Go lang)!")
+		c.String(200, "Hello from Gin (Go lang)!")
 	})
 
 	// 3. Run the server (default is port 5000)
