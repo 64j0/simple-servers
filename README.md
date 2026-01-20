@@ -5,7 +5,7 @@ This project was built so I can compare the default implementation of different 
 For this experiment, I'm interested in:
 
 * How each server deals with not found routes;
-* How each server deals with requests where the route exists, but using a different HTTP verb;
+* How each server deals with requests where the path exists, but it's associated with a different HTTP verb (i.e., request method);
 * How each server expects the HTTP verb to be written.
 
 You can find more about it reading [my blog](https://gaio.dev/).
