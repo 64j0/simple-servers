@@ -3,10 +3,7 @@ open Microsoft.Extensions.DependencyInjection
 open Microsoft.Extensions.Hosting
 open Giraffe
 
-let notFoundHandler = "Not Found" |> text |> RequestErrors.notFound
-
-let endpoints =
-    choose [ GET >=> route "/hello" >=> text "Hello from Giraffe!"; notFoundHandler ]
+let endpoints = choose [ GET >=> route "/hello" >=> text "Hello from Giraffe!" ]
 
 let configureApp (appBuilder: IApplicationBuilder) = appBuilder.UseGiraffe(endpoints)
 
@@ -18,9 +15,6 @@ let main args =
     configureServices builder.Services
 
     let app = builder.Build()
-
-    if app.Environment.IsDevelopment() then
-        app.UseDeveloperExceptionPage() |> ignore
 
     configureApp app
     app.Run()

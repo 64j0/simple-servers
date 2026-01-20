@@ -7,10 +7,8 @@ open Giraffe.EndpointRouting
 let endpoints =
     [ GET [ route "/hello" (text "Hello from Giraffe with Endpoint Routing!") ] ]
 
-let notFoundHandler = "Not Found" |> text |> RequestErrors.notFound
-
 let configureApp (appBuilder: IApplicationBuilder) =
-    appBuilder.UseRouting().UseGiraffe(endpoints).UseGiraffe(notFoundHandler)
+    appBuilder.UseRouting().UseGiraffe(endpoints) |> ignore
 
 let configureServices (services: IServiceCollection) =
     services.AddRouting().AddGiraffe() |> ignore
@@ -21,9 +19,6 @@ let main args =
     configureServices builder.Services
 
     let app = builder.Build()
-
-    if app.Environment.IsDevelopment() then
-        app.UseDeveloperExceptionPage() |> ignore
 
     configureApp app
     app.Run()
